@@ -1,0 +1,289 @@
+/* Reset */
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* HEADER FIJO */
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* NAVBAR */
+nav {
+  background: #1e90ff;
+  color: white;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 70px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+/* SLIDER */
+#slider {
+  width: 60%;                 /* Ocupa el 90% del ancho del dispositivo */
+  max-width: 400px;           /* Límite máximo */
+  margin: 80px auto 20px;     /* Centrado con margen superior */
+  overflow: hidden;           /* Oculta lo que se sale */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.slider-container {
+  display: flex;
+  width: 200px;                /* 4 imágenes = 400% */
+  height: 320px;              /* Altura ajustada */
+  animation: slide 12s infinite;
+}
+
+.slide {
+  flex: 1 0 100%;             /* Cada imagen ocupa el 100% del contenedor visible */
+}
+
+.slide img {
+  width: 100px;                /* Ajusta el ancho completo */
+  height: 90px;               /* Ajusta la altura completa */
+  object-fit: cover;          /* Recorta sin deformar */
+  border-radius: 10px;        /* Bordes redondeados iguales al contenedor */
+}
+
+/* Animación automática */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+
+
+
+/* SECCIONES GENERALES */
+section {
+  padding: 50px 20px;
+}
+
+.subheader {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e90ff;
+}
+
+/* NOSOTROS */
+#nosotros p {
+  max-width: 800px;
+  margin: 15px auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* SERVICIOS */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.servicio {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.servicio:hover {
+  transform: scale(1.05);
+}
+
+.servicio img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* VIDEOS */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.video iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#redes {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+#redes img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+#redes img:hover {
+  transform: scale(1.2);
+}
+
+/* ===================== MEDIA QUERIES ===================== */
+
+/* 1️⃣ Header y títulos <= 1000px */
+@media (max-width: 1000px) {
+  nav {
+    background-color: #32a852 !important;
+  }
+
+  #nosotros h2,
+  #servicios h2,
+  #catalogo h2,
+  #videos h2,
+  #contacto h2 {
+    color: #e36922 !important;
+    font-size: clamp(22px, 3vw, 28px);
+  }
+}
+
+/* 2️⃣ Logo centrado <= 799px */
+@media (max-width: 799px) {
+  .logo {
+    width: 227px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* 3️⃣ Videos más pequeños <= 460px */
+@media (max-width: 460px) {
+  #videos iframe {
+    width: 350px !important;
+    height: 215px !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* 4️⃣ Logo cambia imagen <= 500px */
+@media (max-width: 500px) {
+  .logo {
+    background-image: url('../img/hv.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    content: none;
+  }
+}
+/* contacto */
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  color: #0e1215;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background: #1bdcf1;
+  color: rgb(28, 26, 26);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #145a8d;
+}
+

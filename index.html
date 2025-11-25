@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>YUKULINK</title>
+
+  <!-- Ícono principal -->
+  <link rel="shortcut icon" href="img/icon-192x192.png" type="image/png">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!--  META ETIQUETAS PWA (agregadas) -->
+  <meta name="theme-color" content="#0a3d62" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="img/icon-192x192.png" />
+  <link rel="apple-touch-startup-image" href="img/icon-512x512.png" />
+  <link rel="manifest" href="manifest.json" />
+  <!--  FIN DE META ETIQUETAS PWA -->
+
+  <!-- jQuery (necesario para scroll suave) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Archivo principal JS -->
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <!-- Header principal -->
+  <header id="main-header">
+    <nav>
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#inicio" class="logo-container">
+          <img src="img/yuku.jpeg" alt="Logo YukuLink" class="logo">
+        </a>
+
+        <!-- Menú -->
+        <div id="menu">
+          <ul class="nav-menu">
+            <li><a href="#slider">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carrusel automático -->
+  <section id="slider">
+    <div class="slider-container">
+      <div class="slide"><img src="img/yuku.jpeg" ></div>
+      <div class="slide"><img src="img/ante2.jpeg" ></div>
+      <div class="slide"><img src="img/link.jpeg" ></div>
+      <div class="slide"><img src="img/tp.jpeg" alt="Slide 4"></div>
+    </div>
+  </section>
+
+  <!-- Sección Nosotros -->
+  <section id="nosotros">
+    <div class="container">
+      <h2 class="subheader">Sobre Nosotros</h2>
+      <p>
+        En <strong>YUKULINK</strong> nos especializamos en brindar soluciones de 
+        conectividad a internet, instalación de cámaras de seguridad y desarrollo de sitios web.  
+        Nuestro objetivo es llevar tecnología accesible, confiable y de calidad a cada hogar y negocio, 
+        conectando a las personas desde lo alto de las montañas de Guerrero.
+      </p>
+      <p>
+        Nos destacamos por nuestro compromiso con la innovación, 
+        la atención personalizada y el soporte técnico oportuno para que siempre estés conectado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <div class="container">
+      <h2 class="subheader">Servicios</h2>
+      <div class="servicios-grid">
+        <div class="servicio">
+          <img src="img/antena.jpeg" alt="Internet">
+          <h3>Instalación de Internet</h3>
+          <p>Ofrecemos servicios de instalación de internet estable y de alta velocidad en tu hogar o negocio.</p>
+        </div>
+        <div class="servicio">
+          <img src="img/camara.jpeg" alt="Cámaras de seguridad">
+          <h3>Instalación de Cámaras</h3>
+          <p>Protege lo que más importa con la instalación de cámaras de videovigilancia de última generación.</p>
+        </div>
+        <div class="servicio">
+          <img src="img/agenda.jpg" alt="Diseño Web">
+          <h3>Diseño de Sitios Web</h3>
+          <p>Creamos sitios modernos, rápidos y responsivos para impulsar tu negocio en línea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="catalogo">
+    <div class="container">
+      <h2 class="subheader">Catálogo</h2>
+      <div class="servicios-grid">
+        <div class="servicio"><img src="img/ante1.jpeg" alt="Producto 1"></div>
+        <div class="servicio"><img src="img/ante2.jpeg" alt="Producto 2"></div>
+        <div class="servicio"><img src="img/hv.jpeg" alt="Producto 3"></div>
+        <div class="servicio"><img src="img/tp.jpeg" alt="Producto 4"></div>
+        <div class="servicio"><img src="img/brazocam.jpeg" alt="Producto 5"></div>
+        <div class="servicio"><img src="img/cam.jpeg" alt="Producto 6"></div>
+        <div class="servicio"><img src="img/campared.jpeg" alt="Producto 7"></div>
+        <div class="servicio"><img src="img/dvr.jpeg" alt="Producto 8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section id="videos">
+    <div class="container">
+      <h2 class="subheader">Videos</h2>
+      <div class="videos-grid">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/G1n8sxzdCbw" allowfullscreen></iframe>
+          <p>Tutorial: Instalación de internet paso a paso.</p>
+        </div>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tn8Bp0RXtfM" allowfullscreen></iframe>
+          <p>Cómo instalar cámaras de seguridad fácilmente.</p>
+        </div>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WUYqYma1qmw" allowfullscreen></iframe>
+          <p>Cómo crear un sitio web moderno desde cero.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 📩 FORMULARIO DE CONTACTO YUKULINK -->
+<section id="contacto" class="contacto-section">
+  <div class="container">
+    <h2 class="subheader">Contáctanos</h2>
+    <p></p>
+
+    <form id="contact-form" action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Lalo armenta" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 55 1234 5678 (Opcional)">
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje / Detalles:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos más sobre lo que necesitas..."></textarea>
+      </div>
+
+      <div class="form-buttons-group">
+        <button type="submit" class="submit-btn form-btn">Enviar mensaje</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <div class="container">
+      <h2 class="subheader">Contacto</h2>
+      <p>Envíame un mensaje a mis redes sociales:</p>
+      <ul id="redes">
+        <li><a href="#"><img src="img/face.jfif" alt="Facebook"></a></li>
+        <li><a href="#"><img src="img/watsapp.jfif" alt="WhatsApp"></a></li>
+        <li><a href="#"><img src="img/insta.jfif" alt="Instagram"></a></li>
+      </ul>
+      <p>&copy; 2025 YUKULINK - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+ <!-- ✅ REGISTRO DEL SERVICE WORKER -->
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./sw.js')
+    .then(res => {
+      console.log('✅ Service Worker registrado correctamente:', res);
+    })
+    .catch(err => {
+      console.log('❌ Error al registrar el Service Worker:', err);
+    });
+}
+</script>
+
+<!-- ✅ FORMULARIO + WHATSAPP + NOTIFICACIÓN PUSH -->
+<script>
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombre').value.trim();
+    const correo = document.getElementById('email').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    // 📦 Texto a enviar por WhatsApp
+    const texto = `Hola, soy *${nombre}*.
+Mi correo es: ${correo}.
+Mi teléfono: ${telefono || 'No proporcionado'}.
+${mensaje}`;
+
+    // 👉 Número oficial de YukuLink
+    const numeroWhatsApp = '527571195641';
+
+    // 🔗 Abrir WhatsApp en Web/App
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+
+
+    // --------------------------------------------------------
+    // 🔔 NOTIFICACIÓN PUSH ENVIADA AL DUEÑO (TÚ)
+    // --------------------------------------------------------
+    if ('Notification' in window && navigator.serviceWorker) {
+
+      // 1️⃣ Pedir permiso de notificación
+      const permiso = await Notification.requestPermission();
+
+      if (permiso === 'granted') {
+
+        // 2️⃣ Esperar a que SW esté listo
+        const reg = await navigator.serviceWorker.ready;
+
+        // 3️⃣ Mostrar notificación tipo WhatsApp
+        reg.showNotification('Nuevo formulario de YukuLink', {
+          body: `${nombre} te envio un mensaje. Revisa tu WhatsApp.`,
+          icon: './img/icon-192x192.png',
+          badge: './img/icon-192x192.png',
+          image: './img/yuku.jpeg',
+          vibrate: [200, 100, 200],
+          actions: [
+            { action: 'ver', title: 'Abrir WhatsApp' }
+          ],
+          tag: 'yukulink-form',
+          renotify: true
+        });
+      }
+    }
+  });
+</script>
+
+
+</body>
+</html>

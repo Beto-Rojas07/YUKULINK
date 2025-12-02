@@ -118,54 +118,6 @@ nav {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-
-/* ================== SLIDER (CARRUSEL) CORREGIDO ================== */
-#slider {
-    /* CORRECCIÓN: El slider debe ocupar el 100% del ancho del contenedor. */
-    width: 100%; 
-    max-width: var(--container-width);
-    margin: 0 auto 20px; 
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    /* Altura fija para el contenedor visible */
-    height: 350px; 
-}
-
-.slider-container {
-    /* CORRECCIÓN: Si tienes 4 slides, debe ser 400% */
-    display: flex;
-    width: 400%; 
-    height: 100%;
-    animation: slide 12s infinite;
-}
-
-.slide {
-    flex: 1 0 25%; /* Cada slide ocupa el 25% del 400% total (100% del viewport) */
-}
-
-.slide img {
-    /* CORRECCIÓN: Ocupa el 100% del espacio del slide */
-    width: 100%;
-    height: 350px; /* Igual a la altura de #slider */
-    object-fit: cover;
-    border-radius: 0; /* Quitar borde aquí, ya lo tiene el contenedor */
-}
-
-/* Animación automática */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); }
-    100% { transform: translateX(0); }
-}
-
-
 /* ================== SECCIONES GENERALES ================== */
 section {
     padding: 50px 0;

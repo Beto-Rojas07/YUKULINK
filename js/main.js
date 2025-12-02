@@ -25,3 +25,19 @@ $(document).ready(function () {
     return false;
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const menu = document.getElementById('menu');
+
+    if (hamburgerBtn && menu) {
+        hamburgerBtn.addEventListener('click', () => {
+            // Esto agrega o quita la clase 'open'
+            menu.classList.toggle('open'); 
+            hamburgerBtn.classList.toggle('open');
+        });
+        
+        // ... (código para cerrar el menú al hacer clic en un enlace) ...
+    }
+    // ... (resto del código JS)
+});

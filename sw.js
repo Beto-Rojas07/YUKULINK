@@ -1,7 +1,7 @@
 // -------------------- SERVICE WORKER YUKULINK --------------------
 
 // Nombre y versión del caché
-const CACHE_NAME = 'v3_cache_YUKULINK';
+const CACHE_NAME = 'v4_cache_YUKULINK';
 
 // Archivos a cachear
 const urlsToCache = [
